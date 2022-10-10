@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+html {
+	font: 1em/1.5 "Lato", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+}
+
+body {
+	font-size: 1.3em;
+}
+
+header {
+	height: 20%;
+	position: relative;
+	overflow: hidden;
+	background: url(https://profile.intra.42.fr/assets/background_login-a4e0666f73c02f025f590b474b394fd86e1cae20e95261a6e4862c2d0faa1b04.jpg) center no-repeat;
+	/* Image Credit: Unsplash.me */
+	background-size: cover;
+}
+header .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+header h1, header h2 {
+	margin: 0;
+}
+header h2 {
+	text-transform: uppercase;
+	margin-top: -.5em;
+}
+header hgroup {
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	border: 5px solid #fff;
+	padding: .5em 3em;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+header .overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background:#333 center no-repeat;
+	background-size: cover;
+	z-index: 0;
+	opacity: 0;	-webkit-filter: blur(4px);
+}
+
+.site {
+	height: 60%;
+	padding: 2em 0;
+	text-align: center;
+	background-color: #efefef;
+	font-size: .8em;
+	color: #444;
+	position:relative
+}
+
+.inputs{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	font-weight:bold;
+	margin:2px;
+	border: 2px solid black;
+	padding: 0px;
+	text-align: center;
+	font-family: inherit;
+	font-size: 1.5rem;
+}
+
+input[type=text]:focus{
+  outline: 2px solid #008CBA;
+  color : transparent;
+  text-shadow : 0 0 0 #000;
+
+}
+
+.box-button{
+	width: 100%;
+	margin-top:10px;
+}
+
+.button {
+	background-color: #008CBA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-title{
+	margin-top:15px;
+	/* text-align: center; */
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-size: 18px;
+}
+.readme{
+	position: relative;
+	right: -200px;
+	border: 1px solid black;
+	padding: 6px;
+	border-radius: 100%;
+	text-decoration: none;
+}
+
+#user-try{
+	margin-top: 20px;
+}
+
+footer{
+	background-color: #797979;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: 300;
+	width: 100%;
+	height: min-content;
+	margin:auto;
+	margin-top: auto;
+}
+
+h3{
+	position: relative;
+	top:35%;
+	transform: translateY(-50%);
+}
+
+.winner{
+	color: green;
+}
+
+.warning {
+	color: red;
+}
